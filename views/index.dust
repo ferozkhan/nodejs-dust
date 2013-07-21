@@ -1,1 +1,25 @@
 {>base/}
+{<content}
+<table class="table">
+    <thead>
+        <th>Item</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th></th>
+    </thead>
+    {#items}
+    <tr>
+        <td>{name}</td>
+        <td>
+            <div class="btn-group" data-toggle="buttons-radio">
+                {#size}
+                    <button type="button" class="btn">{.}</button>
+                {/size}
+            </div>
+        </td>
+        <td>{currency} {price}</td>
+        <td><a href="/add/item/{id}" class="btn btn-small"><i class="icon-plus-sign"></i></a></td>
+    </tr>
+    {/items}
+</table>
+{/content}

@@ -1,0 +1,24 @@
+{
+    "items":[
+        {
+            "product_name": "Nike",
+            "price": "USD 250",
+            "size": [8, 9, 10]
+        },
+        {
+            "product_name": "Puma",
+            "price": "USD 350",
+            "size": [8, 9, 10]
+        },
+        {
+            "product_name": "Adidas",
+            "price": "USD 250",
+            "size": [8, 9, 10]
+        },
+        {
+            "product_name": "Fila",
+            "price": "USD 250",
+            "size": [8, 9, 10]
+        }
+    ]
+}
