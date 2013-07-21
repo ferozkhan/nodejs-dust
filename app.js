@@ -11,11 +11,12 @@ var express = require('express'),
     consolidate = require('consolidate');
 
 var app = express();
+app.engine('dust', consolidate.dust);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'dust');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
