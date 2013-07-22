@@ -18,7 +18,7 @@
             </div>
         </td>
         <td>{currency} {price}</td>
-        <td><a href="/add/item/{id}" class="btn btn-small"><i class="icon-plus-sign"></i></a></td>
+        <td><a href="/item/add/{index}" class="btn btn-small"><i class="icon-plus-sign"></i></a></td>
     </tr>
     {/items}
 </table>

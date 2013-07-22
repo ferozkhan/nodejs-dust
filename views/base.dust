@@ -9,8 +9,17 @@
   <div class="container">
     <div class="row">
       <h2 class="span2">{app_name}</h2>
-      <div class="span5 offset5"><i class="icon-shopping-cart"></i>  {#basket}{basket}{:else}0{/basket}</div>
+     </div>
+    <p class="well well-small text-right">
+
+      <b>{basket}</b> items,  Total: <b>{currency} {total_amount}  </b>
+      {#basket}<a href="/checkout" class="btn btn-success" type="button"><i class="icon-shopping-cart"></i> Checkout </a>{:else}{/basket}
+    </p>
+    {#msg}
+    <div class="alert alert-info">
+      {msg}
     </div>
+    {/msg}
     <div>
         {+content}
             This is the base content.
