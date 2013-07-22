@@ -13,3 +13,7 @@ exports.index = function(req, res){
                         "msg": req.app.settings.msg
                 });
 };
+
+exports.flush = function(req, res){
+    req.app.settings.msg =  '';
+}

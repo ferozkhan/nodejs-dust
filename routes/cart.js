@@ -1,6 +1,6 @@
 
 /*
- * GET users listing.
+ * Cart Actions.
  */
 
 exports.addItem = function(req, res){

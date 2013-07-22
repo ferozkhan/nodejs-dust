@@ -8,6 +8,8 @@ var express = require('express'),
     cart = require('./routes/cart'),
     http = require('http'),
     path = require('path'),
+    dust = require('dustjs-linkedin'),
+    dust_h = require('dustjs-helpers'),
     consolidate = require('consolidate'),
     app_name = 'NodeExpressShop';
 
@@ -45,8 +47,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/flush', routes.flush);
 app.get('/item/add/:index', cart.addItem);
 app.get('/checkout', cart.checkout);
+
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));
