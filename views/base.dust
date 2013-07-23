@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <title>{app_name}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/cdn-sg/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/cdn-sg/bootstrap/css/bootstrap-responsive.min.css">
   </head>
   <body>
   <div class="container">
@@ -12,7 +14,7 @@
      </div>
     <p class="well well-small text-right">
       <b>{basket}</b> items,  Total: <b>{currency} {total_amount}  </b>
-        <a href="/checkout" class="btn btn-success" type="button"><i class="icon-shopping-cart"></i> Checkout </a>
+        <a href="/checkout" class="btn btn-success" type="button" data-content="something" data-placement="left" data-toggle="popover"><i class="icon-shopping-cart"></i> Checkout </a>
       </p>
     {#msg}
     <div id="msg_box" class="alert alert-info">
