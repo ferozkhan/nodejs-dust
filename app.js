@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -37,7 +36,7 @@ app.use(require('less-middleware')({ src: __dirname + '/public' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // app demo data
-app.set('currency', process.env.PORT || 'USD');
+app.set('currency', process.env.CURRENCY || 'USD');
 app.set('items', dummy_data);
 
 
